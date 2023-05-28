@@ -282,11 +282,11 @@ describe('#createProxyServer.web() using own http server', function () {
       proxy.web(req, res);
     }
 
-    proxyServer.listen('8084');
+    proxyServer.listen('45005');
 
     http.request({
       hostname: '127.0.0.1',
-      port: '8084',
+      port: '45005',
       method: 'GET',
     }, function() {}).end();
   });
